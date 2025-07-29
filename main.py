@@ -14,7 +14,7 @@ def load_vehicle_data():
 
 def save_vehicle_data(data):
     with open('vehicles.json', 'w') as f:
-        json.dump(data, f, indent=2)
+        json.dump(data, f)
 
 telemetry_data = {}
 
@@ -27,6 +27,7 @@ def get_vehicles():
 def add_vehicle():
     new_vehicle = request.get_json()
     required_fields = ['vin', 'manufacturer', 'model', 'fleet_id', 'owner_operator', 'registration_status']
+    
     if not all(field in new_vehicle for field in required_fields):
         return jsonify({'error': 'Missing required vehicle fields'}), 400
 
