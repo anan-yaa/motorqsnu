@@ -1,0 +1,12 @@
+[
+ {
+    "vin": "8345774",
+    "manufacturer": "Ford",
+    "gps":"34.57,150.64",
+    "model": "F-150",
+    "fleet_id": "01",
+    "owner_operator": "zbc",
+    "registration_status": "Ongoing" 
+ },
+
+]
